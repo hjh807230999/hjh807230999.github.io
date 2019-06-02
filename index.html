@@ -22,7 +22,7 @@
             font-size: 16px;
         }
         xmp{
-            margin-left: -80px;
+            margin-left: -100px;
         }
     </style>
 </head>
@@ -49,8 +49,45 @@
                 <line x1="100" y1="100" x2="200" y2="200" stroke="#000" stroke-width="1" style="cursor: pointer"></line>
             </xmp>
             <hr>
-            <p></p>
-            <p></p>
+            <xmp>
+                <line x1="100" y1="100" x2="200" y2="200" stroke="transparent" stroke-width="10" style="cursor: pointer"></line>
+            </xmp>
+            <hr>
+            <p>stroke的样式none与transparent不同</p>
+            <p>d属性M(起始坐标),L(结束坐标),H(水平线),V(垂直线),A(圆弧),Z(闭合路径)</p>
+            <xmp>
+                <path d="M100 100 L150 200 L300 200 L300 100Z" stroke-width="5" stroke="#f00" fill="none"></path>
+            </xmp>
+            <hr>
+            <p>fill的样式none与transparent相同</p>
+            <h4>H(水平线):</h4>
+            <ul>
+                <li>大写的H相当于x的坐标</li>
+                <li>小写的h相当于长度；</li>
+                <li>取值可以正值，可取负值，取负值的时候等于取反方向【反坐标】</li>
+            </ul>
+            <hr>
+            <h4>V(垂直线):</h4>
+            <ul>
+                <li>大写V是直接去找y坐标</li>
+                <li>小写v是找长度，可取负值，负值代表反方向；</li>
+            </ul>
+            <hr>
+            <p>el:'#app', //根节点</p>
+            <p>data:{ }   //vue可以操作的数据集合</p>
+            <p>给对象添加响应式属性:vm.$set(对象，属性，初始值)</p>
+            <p>如果要使视图中的数组发生改变  需要使用数组的遍历方法</p>
+            <p>push pop  shift unshift  splice sort reverse</p>
+            <p>获取data选项中的a 可以通过vm.a 或者vm.$data.a</p>
+            <p>pop() 删除数组的最后一项 改变原数组</p>
+            <p>shift() 移除数组中第一项 改变原数组</p>
+            <p>unshift() 在数组前添加任意数组项 改变原数组</p>
+            <p>splice(index,num,info)</p>
+            <p>index 从数组第几项开始 (下标值)</p>
+            <p>num   删除几个数组项</p>
+            <p>info  从删除的位置开始添加新数组项</p>
+            <p>unshift() = splice(0,0,info)</p>
+            <p>push() = splice(arr.length,0,info)</p>
         </div>
         <hr>
         <div class="day2">

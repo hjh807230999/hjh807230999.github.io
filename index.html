@@ -92,11 +92,31 @@
         <hr>
         <div class="day2">
             <h1>day2</h1>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
+            <p>特例  vue不能设置数组的length  对象属性的增加和删除</p>
+            <p>Object.defineProperty(data,'a',{}) Vue中data的底层</p>
+            <p>data中的数据就是双向数据绑定，通过get和set处理过</p>
+            <p>{{数据}}  在{{}}中可以插入vue提供的数据  不能把标签格式的字符串解析成标签</p>
+            <p>v-html   类似于innerHTML   把数据解析成对应的标签格式</p>
+            <p>v-text   类似于innerText</p>
+            <p>v-if=数据：如果数据为真  则渲染该节点  如果数据为假  则不渲染该节点</p>
+            <p>V-if  v-else-if vl-else  如果一起出现，必须是相邻兄弟</p>
+            <p> v-show=数据  如果数据为真  则显示该节点  如果数据为假  则不显示该节点</p>
+            <p>v-once  限制响应式数据的次数</p>
+            <p>v-on:click=回调函数     为元素绑定一个点击事件</p>
+            <p>v-on:click.once=回调函数     为元素绑定一个一次性的点击事件</p>
+            <p>beforeCreate  此时vue实例的状态  data中没有数据</p>
+            <p>created  此时vue实例的状态  data已经有数据了  但是数据没有挂载到视图中  数据没有挂载在根节点</p>
+            <p>beforeMount  此时根节点已经存在  但是数据还没有挂载到根节点</p>
+            <p>mounted  此时数据已经挂载到根节点上了</p>
+            <p>beforeUpdate  在数据改变之前触发</p>
+            <p>updated       在数据改变之后触发</p>
+            <p>如果要在某个生命周期函数中使用  最终的vm实例</p>
+            <p>则this.$nextTick(回调)  在回调函数中是可以访问到 最终的vm实例</p>
+            <p>vm.$data  获取数据</p>
+            <p>vm.$el    获取根节点</p>
+            <p>vm.$set(对象，属性，值)</p>
+            <p>vm.$mount("#app")</p>
+            <p>vm.$destroy</p>
         </div>
         <hr>
     </div>

@@ -119,9 +119,59 @@
             <p>vm.$destroy</p>
         </div>
         <hr>
+        <div class="day3">
+            <h1>day3</h1>
+            <p>方法写在methods中  当视图重新渲染时  方法会再次执行</p>
+            <p>属性写在computed中  当视图重新渲染时  get不会再次执行</p>
+            <xmp>
+                <input type="text" v-model.number.lazy="a">
+            </xmp>
+            <hr>
+            <p>表单修饰符:</p>
+            <p>.number  1.限制用户输入的数据必须是数字  2.把用户输入的数据转成数字类型</p>
+            <p>.lazy  当文本框失去焦点时   数据响应视图的变化</p>
+            <p>.trim   对视图中的数据进行处理  再响应到vue中</p>
+            <p>v-model的作用 ：收集表单中的数据</p>
+            <p>单选按钮  收集的是value值</p>
+            <p>多选按钮  收集的是value值  数据收集在数组中</p>
+            <p>下拉框    收集的是value值</p>
+            <p>两种情况  可以收集单个选中的下拉框  数据存在字符串中;以收集多个选中的下拉框  数据存在数组中</p>
+            <p>文本域和普通的表单元素  都是收集在字符串中</p>
+            <p>@click=fn  和  @click=fn()   的区别</p>
+            <p>后者必须要手动传入$event  才能在回调函数中使用事件对象</p>
+            <p>件修饰符:</p>
+            <p>.once   为元素绑定一次性事件</p>
+            <p>.stop   阻止事件冒泡</p>
+            <p>.capture  为元素绑定一个事件捕获阶段触发的回调函数</p>
+            <p>.self  为元素绑定一个只在自身元素上触发的事件</p>
+            <p>.prevent  阻止元素的默认行为</p>
+            <xmp>
+                <input @keyup.alt.13.once="fn">按键修饰符
+            </xmp>
+            <hr>
+            <p> .enter / .13   在enter键抬起出触发</p>
+            <p>C命令：三次贝塞尔曲线 (x1,y1,x2,y2,x,y) x1,y1 控制点一 x2,y2 控制点二 x,y 结束点</p>
+            <xmp>
+                <path d="M100 200 C200 100 300 300 400 200" style="fill:none;"></path>
+            </xmp>
+            <hr>
+            <p>T命令：一次贝塞尔曲线 (x,y)结束点</p>
+            <xmp>
+                <path d='M100 300 T300 200'></path>
+            </xmp>
+            <hr>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
     </div>
     <script>
-        
+        /*
+            <div class="day3">
+                <h1>day3</h1>
+                p*10
+            </div>
+         */
     </script>
 </body>
 </html>

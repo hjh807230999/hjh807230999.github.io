@@ -207,6 +207,17 @@
             <p>sessionStorage：作用于当前的页面，新开页面或者关闭页面时候，数据消失；</p>
             <p>transform=rotate(angle x y) (不要写在style里面) angle 旋转角度 x,y旋转中心</p>
             <p>stroke-dasharray:a,b/a,b,c,d...绘制虚线 </p>
+        </div>
+        <div class="day7">
+            <h1>day7</h1>
+            <p> new Worker(‘后台处理的JS地址’)</p>
+            <p>利用postMessage传输数据</p>
+            <p>onmessage = function(){}  监听接收信息,e.data可以获取postMessage传输的数据</p>
+            <p>读取图片的数据时，通常采用url， // 此url直接指向 存在内存当中的文件 url，提高性能，base64编码字符串渲染到html页面消耗性能</p>
+            <p>//复制选中的文字：window.getSelection||window.getSelection</p>
+            <p>然后存到变量中：text = window.getSelection()；text = document.selection.createRange();</p>
+            <p>最后一步：document.execCommand('Copy') // 执行浏览器复制的命令</p>
+            <p>ArrayBuffer表示二进制数据的原始缓冲区，该缓冲区用于存储各种类型化数组的数据</p>
             <p></p>
             <p></p>
         </div>

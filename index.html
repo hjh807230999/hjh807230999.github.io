@@ -236,9 +236,26 @@
         </div>
         <div class="day9">
             <h1>day9</h1>
-            <p><fieldset> 标签可以将表单内的相关元素分组。</p>
-            <p><fieldset> 标签会在相关表单元素周围绘制边框。</p>
-            <p><legend>Personalia:</legend></p>
+            <p>fieldset 标签可以将表单内的相关元素分组。</p>
+            <p>fieldset 标签会在相关表单元素周围绘制边框。</p>
+            <xmp>
+                <legend>Personalia:</legend>
+            </xmp>
+            <hr>
+        </div>
+        <div class="day10">
+            <h1>day10</h1>
+            <p>v-if="false",不渲染该节点</p>
+            <p>router-link 组件的属性:tag  改变组件在页面中的种类;to  指定跳转的地址</p>
+            <p>routes=[{}]路由和组件的映射表</p>
+            <p>router = new VueRouter({routes})实例化路由对象</p>
+            <p>component 动态组件   is属性必须</p>
+            <p>keep-alive  可以保证内部的组件不被销毁</p>
+            <p>全局组件  Vue.component("name",{template:'<div>首页</div>'})</p>
+            <p>编程导航</p>
+            <p> this.$router.push({path:'/home',query:{a:1}})</p>
+            <p>this.$router.push({name:'userlink',params:{id:2}})</p>
+            <p>this.$router.go(-1)</p>
         </div>
     </div>
     <script>

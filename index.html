@@ -277,12 +277,28 @@
             <p>a href="javascript:history.go(-1) : 返回上一页</p>
             <p>把axios函数注入到Vue的原型上 ： Vue.prototype.$axios = axios</p>
             <p>使用axios拉取数据 axios的get函数返回的是一个promise对象</p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+        </div>
+        <div class="day13">
+            <h1>day13</h1>
+            <p>认识路由</p>   
+            <p>BrowserRouter(可以让根组件  挂载其它的组件)</p>
+            <p> BrowserRouter as Router(as 取别名)</p>
+            <p>数据驱动视图</p>
+            <p>Route控制路径显示对应的组件</p>
+            <p>exact精准匹配，给根路由加exact</p> 
+            <p>NavLink，Link都类似于a标签，NavLink是导航a标签</p>
+            <p>Route exact path={'/'} component={Home}/</p>
+            <p>NavLink to="/" exact  activeClassName={"hover"}</p>
+            <p>Switch组件只匹配一个路由</p>
+            <p>匹配路由有两种方式：1.动态路由；2.查询字符串</p>
+            <p>动态路由to={'/newsdetail/111'} ----》Route path={'/newsdetail/:id'}</p>
+            <p>查询字符串to={'/newsdetai2?id=111'} ----》 Route path={'/newsdetai2'}</p>
+            <p>动态路由中的获取方法  this.props.match.params.id;</p>
+            <p>查询字符串中的获取方法 引入第三方模块url  ， const id = Url.parse(this.props.location.search,true).query.id;</p>
+            <p>组件卸载之前可以更新setState中的内容</p>
+            <p>组件卸载之后不能更新setState中的内容</p>
+            <p>解决组件卸载之后的问题方法一：componentWillUnmount(){this.setState = ()=>{return}}  重新定义setState函数</p>
+            <p>解决组件卸载之后的问题方法二：定义开关  this.state.bool = false</p>
         </div>
     </div>
     <script>

@@ -300,6 +300,30 @@
             <p>解决组件卸载之后的问题方法一：componentWillUnmount(){this.setState = ()=>{return}}  重新定义setState函数</p>
             <p>解决组件卸载之后的问题方法二：定义开关  this.state.bool = false</p>
         </div>
+        <div class="day14">
+            <h1>day14</h1>
+            <p>react里面的路由匹配规则：从上至下匹配，匹配到一条规则后会继续匹配，如果遇到无规则限制的情况下，也会匹配成功，所以我们需要限定匹配规则，添加Switch组件，让它只能匹配到一个路由</p>
+            <p>替换路由内容：history.replaceState('gj','国际','guoji')</p>
+            <p>设置hash值：window.location.hash = 'guonei'</p>
+            <p>calc() 函数用于动态计算长度值。（需要注意的是，运算符前后都需要保留一个空格）： width: calc(100% - 100px);</p>
+            <p>react里面可以设置一个路由映射表routes.js,export default routes</p>
+            <p>{数组需要判断length是否大于0}</p>
+            <p>嵌套路由的Route在对应的子组件里面</p>
+            <p>map方法需要绑定key</p>
+            <p>绑定标签属性可以通过es6语法：{...item}</p>
+            <p>父组件向子组件传递参数：render={(props)=>{console.log(props);return(<item.component {...props} abc={item.children}/>)}}</p>
+        </div>
+        <div class="day15">
+            <h1>day15</h1>
+            <p>组件化开发思想</p>
+            <p>使用 PropTypes 进行类型检查 ： import PropTypes from 'prop-types'</p>
+            <p>//定义父组件传值的类型 ： Header.propTypes = {arra : PropTypes.array,ata : PropTypes.bool}</p>
+            <p>//可以设置子组件的默认的属性值 ： Header.defaultProps = {name : '默认传值内容'}</p>
+            <p>props传值</p>
+            <p>阿里图标两种引入方式</p>
+            <p>1.通过下载到本地，然后引入iconfont.css样式</p>
+            <p>2.通过引入网页链接引入阿里图标（public模板里面）</p>
+        </div>
     </div>
     <script>
         /*

@@ -311,7 +311,7 @@
             <p>嵌套路由的Route在对应的子组件里面</p>
             <p>map方法需要绑定key</p>
             <p>绑定标签属性可以通过es6语法：{...item}</p>
-            <p>父组件向子组件传递参数：render={(props)=>{console.log(props);return(<item.component {...props} abc={item.children}/>)}}</p>
+            <p>父组件向子组件传递参数：render={(props)=>{console.log(props);return(item.component {...props} abc={item.children}/)}}</p>
         </div>
         <div class="day15">
             <h1>day15</h1>
@@ -323,6 +323,15 @@
             <p>阿里图标两种引入方式</p>
             <p>1.通过下载到本地，然后引入iconfont.css样式</p>
             <p>2.通过引入网页链接引入阿里图标（public模板里面）</p>
+        </div>
+        <div class="day16">
+            <h1>day16</h1>
+            <p>引入百度Echarts的基本三步</p>
+            <p>1.基于准备好的dom，初始化echarts实例</p>
+            <p>2.指定图表的配置项和数据</p>
+            <p>3.使用刚指定的配置项和数据显示图表。</p>
+            <p>使用create-react-app 项目名称前先进行yarn命令：yarn init </p>
+            <p>使用如下命令通过 npm 安装 ECharts：1.使用如下命令通过 npm 安装 ECharts：npm install echarts --save  2.使用Echarts实现3D需要安装：npm install echarts-gl</p>
         </div>
     </div>
     <script>
